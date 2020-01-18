@@ -1,1 +1,27 @@
-theme: jekyll-theme-cayman
+# Site settings
+url: "https://inspaceai.github.io"
+baseurl: ""
+brief-intro: Intelligence in Space
+email: hansoli@inspace.re.kr
+description: InSpace Artificial Intelligence Lab
+title: InSpace AILab
+permalink: /:year/:month/:day/:title/
+timezone: Etc/UTC
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# post future
+future: true
+
+# comment
+disqus: inspaceai
+
+# pagination
+category_dir: category/
+tag_dir: tag/
+plugins: [jekyll-paginate]
+paginate: 10

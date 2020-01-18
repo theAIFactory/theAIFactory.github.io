@@ -1,0 +1,33 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+icon: fas fa-building
+type: page
+category: Projects
+---
+
+<div class="page clearfix">
+    <div class="left">
+        <h1>{{page.title}}</h1>
+        <hr>
+        <ul>
+            {% include get_subcat.html %}
+            {% for subcategory in subcategories %}
+                <h2 id="{{subcategory}}">{{subcategory}}</h2>
+                {% for post in site.categories[subcategory] %}
+                {% if post.categories contains page.category and post.url %}
+                    <li>
+                        <time>{{ post.date | date:"%F" }} {{ post.date | date: "%a" }}.</time>
+                        <a class="title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                        {% include category.html %}
+                        {% include tag.html %}
+                    </li>
+                {% endif %}
+                {% endfor %}
+            {% endfor %}
+        </ul>
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+</div>
+<script src="{{ "/js/pageContent.js " | prepend: site.baseurl }}" charset="utf-8"></script>
