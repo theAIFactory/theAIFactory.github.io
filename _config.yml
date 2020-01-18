@@ -1,10 +1,10 @@
 # Site settings
-url: "https://inspaceai.github.io"
+url: "https://theaifactory.github.io"
 baseurl: ""
-brief-intro: Intelligence in Space
-email: hansoli@inspace.re.kr
-description: InSpace Artificial Intelligence Lab
-title: InSpace AILab
+brief-intro: Now leave AI to AIFactory.
+email: tykim@aifactory.page
+description: Machine Learning Social Media
+title: AIFactory
 permalink: /:year/:month/:day/:title/
 timezone: Etc/UTC
 
@@ -18,10 +18,10 @@ kramdown:
 future: true
 
 # comment
-disqus: inspaceai
+disqus: tykimos
 
 # pagination
-category_dir: category/
+category_dir: publisher/
 tag_dir: tag/
 plugins: [jekyll-paginate]
 paginate: 10
